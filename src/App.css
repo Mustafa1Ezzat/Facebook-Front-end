@@ -1,0 +1,2846 @@
+
+:root{
+    --PriColor: #0D1117;
+    --SecColor: #141B23;
+
+    --LogoColor: #0866ff;
+    --LoginBtnColor: #00a400;
+    --BorderColor: #ffffff0d;
+    --BorderHoverColor: rgba(255, 255, 255, 0.08);
+    --BoxShadowColor : rgba(255, 255, 255, 0.051);
+    --PlaceholderColor : rgba(223, 227, 231, 0.8);
+
+    --CloseBTN: #fc5677;
+    --TxtColor: #dee2e6;
+    --bs-popover-bg: var(--LogoColor) !important;
+    --BtnEdit : rgba(255, 255, 255, 0.01);
+}
+
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+
+}
+
+h1, h2, h3, h4, h5, h6, div, p, span, a, section{
+    color: var(--TxtColor) !important;
+}
+
+
+/* start LoginPage ******************************************** */
+
+
+/* Left Side */
+.HomeLogIn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: 100vh;
+    width: 100%;
+
+    box-sizing: border-box;
+    
+    color: var(--TxtColor);
+}
+
+
+
+
+.LogoAndBrandName, .FormLogIn {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--PriColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BrandAndSlong{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+    cursor: default;
+
+    width: 75%;
+    padding: 20px;
+}
+
+.BrandAndSlong > h1{
+    width: 50%;
+    
+    font-size: 60px;
+    color: var(--LogoColor);
+
+    &:hover{
+            filter: brightness(1.2);
+            transition: filter 0.3s ease;
+    }
+}
+
+.BrandAndSlong > p{
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .HomeLogIn{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .LogoAndBrandName{
+        display: none;
+    }
+
+    .FormLogIn {
+        width: 100% !important; 
+    }
+}
+
+
+/* ******************************* */
+
+/* Right Side */
+.FormLogIn{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.FormHeader{
+    text-align: center;
+}
+
+.FormHeader>h4{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+.Form{
+    width: 60%;
+    /* height: 100%; */
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--BorderColor);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: var(--SecColor);
+
+    &:hover{
+        border: 1px solid var(--BorderHoverColor);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.input-group-text{
+    background-color: var(--BorderColor) !important;
+    color: var(--TxtColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    cursor: default;
+}
+
+.UserName{
+    background-color: var(--SecColor) !important;
+    color: var(--TxtColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+}
+
+.UserName::placeholder{
+    color: var(--PlaceholderColor) !important;
+}
+
+.UserName:focus{
+    border-color: var(--BorderColor) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+
+  .Form> button{
+    border-color: var(--BorderColor) !important;
+    background-color: var(--LoginBtnColor);
+    color: var(--TxtColor);
+    font-weight: bolder;
+
+    &:hover{
+     background-color: var(--SecColor) !important;
+     border: 1px solid var(--BorderColor);
+     filter: brightness(1.1);
+    }
+  }
+
+  .Form> button:disabled{
+    background-color: var(--BorderColor) !important;
+  }
+
+
+
+
+  
+  .ToLogIn{
+    background-color: transparent !important;
+    border: transparent !important;
+    margin: 10px 0 0 0;
+    padding: 0 0;
+    font-size: 15px !important;
+    font-weight: lighter !important;
+
+
+
+    &:hover{
+        background-color: transparent !important;
+        border: 1px solid var(--BorderColor);
+        filter: brightness(1) !important;
+       }
+  }
+
+
+  .NewAccount{
+    color: #00a400 !important;
+    background-color: transparent !important;
+    border: transparent !important;
+    font-weight: bolder !important;
+
+    &:hover{
+        background-color: transparent !important;
+        border: 1px solid var(--BorderColor);
+        filter: brightness(1) !important;
+       }
+  }
+
+
+.Form>a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: transparent !important;
+  }
+
+
+  .LinkStyle> button{
+    border-color: var(--BorderColor) !important;
+    background-color: #00a400;
+    color: var(--TxtColor) !important;
+    font-weight: bolder;
+
+    &:hover{
+     background-color: var(--SecColor) !important;
+     border: 1px solid var(--BorderColor);
+     filter: brightness(1.1);
+    }
+  }
+
+  .Form> button:disabled{
+    background-color: var(--BorderColor) !important;
+  }
+
+
+/* end LoginPage ********************************************** */
+
+
+
+
+
+/* start MainHomePage *********** */
+
+
+
+.PageBody{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--PriColor);
+    box-sizing: border-box;
+}
+
+
+/* ens MainHomePage ************* */
+
+
+/* start Nav *********** */
+
+.FacebookLogo{
+    /* width: 100%; */
+    height: 100%;
+    padding: 7px;
+    margin-right: 10px;
+    cursor: default;
+}
+
+
+.Nav{
+    height: 50px;
+    width: 100%;
+    background-color: var(--SecColor);
+    border-bottom: 1px solid var(--BorderColor);
+    padding: 0 1.5rem;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    overflow: hidden;
+
+    position: relative;
+    z-index: 10 !important;
+
+}
+
+.Nav > section{
+    height: 100%;
+    width: 100%;
+}
+
+.LeftPart{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--TxtColor);
+}
+
+.LeftPart>h5{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    cursor: default;
+}
+
+
+
+
+
+
+.NavIcons{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.TogglesBtn{
+    background-color: transparent !important;
+    border: transparent !important;
+    width: 100% !important;
+    height: 50px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+
+.RightPart{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.messagePopup{
+    background-color: var(--SecColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+    margin-left: -10px !important;
+}
+
+.messagePopup>.popover-arrow{
+    display: none !important;
+}
+
+.messagePopup2{
+    background-color: var(--SecColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    width: 100% !important;
+}
+
+
+.MessageBtn{
+    background-color: var(--PriColor) !important;
+    border: transparent !important;
+    cursor: pointer !important;
+    clip-path: circle();
+    
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+.DelBtn{
+    background-color: var(--PriColor) !important;
+    border: transparent !important;
+    cursor: pointer !important;
+    clip-path: circle();
+    padding: 5px !important;
+    
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+.popover-arrow{
+    /* clip-path: circle() !important; */
+    border-radius: 50% !important;
+    background-color: var(--PriColor) !important;
+    border: 2px solid var(--TxtColor) !important;
+    width: 10px !important;
+    height: 10px !important;
+    display: none !important;
+}
+
+.popover-arrow::after {
+    border: none !important;
+}
+
+.popover-header::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: var(--bs-popover-arrow-width);
+    margin-left: calc(-0.5 * var(--bs-popover-arrow-width));
+    content: "";
+    border-bottom: var(--bs-popover-border-width) solid var(--bs-popover-header-bg);
+}
+
+
+.popover-header{
+    background-color: var(--LogoColor) !important;
+    color: var(--TxtColor) !important;
+    border-bottom: 1px solid var(--BorderColor) !important;
+    font-weight: bolder !important;
+}
+
+.popover-body{
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+
+
+.messagePopupSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.MessagesAvatar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding:3px;
+    margin: 3px;
+    cursor: pointer;
+    border: 1px solid transparent !important;
+
+
+
+    &:hover{
+        background-color: lin !important;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05), #00a40000) !important;
+        border: 1px solid var(--BorderColor) !important;
+        transform: scale(1.02) !important;
+        transition: transform 0.2s ease-in-out !important;
+        filter: brightness(1) !important;
+       }
+}
+
+.contentPopover{
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    max-height:  75vh !important;
+}
+
+
+.Profile{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding:3px;
+    margin: 3px;
+    cursor: pointer;
+    border: 1px solid transparent !important;
+    color: var(--TxtColor) !important;
+
+
+
+    &:hover{
+        background-color: lin !important;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05), #00a40000) !important;
+        border: 1px solid var(--BorderColor) !important;
+        transform: scale(1.02) !important;
+        transition: transform 0.2s ease-in-out !important;
+        filter: brightness(1) !important;
+       }
+}
+
+.SettingsIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px !important;
+
+
+    background-color: var(--PriColor) !important;
+    width: 30px !important;
+    height: 30px !important;
+    clip-path: circle() !important;
+}
+
+.ProfileIcons>section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid transparent !important;
+    cursor: pointer;
+
+    &:hover{
+        background-color: lin !important;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05), #00a40000) !important;
+        border: 1px solid var(--BorderColor) !important;
+        transform: scale(1.02) !important;
+        transition: transform 0.2s ease-in-out !important;
+        filter: brightness(1) !important;
+       }
+}
+
+.ProfileIcons>section>span{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.BtnLogOut{
+    background-color: transparent !important;
+    border: none !important;
+    width: 100% !important;
+    padding: 5px 10px;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    align-items: center;
+
+
+    &:hover{
+        background-color: lin !important;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05), #00a40000) !important;
+        border: 1px solid var(--BorderColor) !important;
+        transform: scale(1.02) !important;
+        transition: transform 0.2s ease-in-out !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+.ChangeMode{
+
+    background-color: var(--PriColor) !important;
+    width: 35px !important;
+    height: 35px !important;
+    clip-path: circle();
+    border: transparent !important;
+    color: var(--TxtColor) !important;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+
+
+
+.contentMessages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100%;
+    padding: 0 10px;
+}
+
+
+.sendData{
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+
+}
+
+
+.SendBTN{
+    background-color: var(--PriColor) !important;
+    color: var(--TxtColor) !important;
+    border: 1px solid transparent !important;
+    border-radius: 50px !important;
+    padding: 5px 20px !important;
+    font-size: 15px !important;
+}
+
+.SendBTN::placeholder{
+    color: var(--PlaceholderColor) !important;
+    opacity: 0.2 !important;
+}
+
+.SendBTN:focus{
+    border-color: var(--BorderColor) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+.sendData>div>button{
+    background-color: transparent !important;
+    color: var(--TxtColor) !important;
+    border: 1px solid transparent !important;
+    cursor: pointer !important;
+    width: 20%;
+
+
+    &:hover{
+        filter: brightness(1) !important;
+        transform: scale(1.5) !important;
+        rotate: 45deg;
+        transition: 0.2s ease-in-out;
+       }
+}
+
+
+.TextPopover{
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    height:  500px !important;
+}
+
+
+
+.textData{
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    max-height:  443.5px !important;
+}
+
+.textData::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .textData::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    .textData::-webkit-scrollbar-thumb {
+      background: transparent;
+  }
+  
+  .textData::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+
+
+.textDataBody{
+    display: inline-block;
+    background-color: var(--PriColor);
+    border-radius: 10px 10px 10px 0px;
+    padding: 10px 15px;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+
+
+/* ens Nav ************* */
+
+
+
+
+
+
+
+
+/* start ScrollBar *********** */
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: var(--PriColor);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--TxtColor);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--SecColor);
+  }
+/* ens ScrollBar ************* */
+
+
+
+
+
+
+
+
+
+/* start HomePage ****************** */
+
+
+.HomePage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-top: -50px;
+    padding-top: 50px;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.RIGHT{
+/* border: 1px solid var(--BorderColor); */
+    height: 100%;
+    width: 30%;
+}
+.CENTER{
+/* border: 1px solid var(--BorderColor); */
+    height: 100%;
+    width: 40%;
+    min-width: 600px;
+
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.CENTER::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent !important;
+}
+
+/* Hide scrollbar for Firefox */
+.CENTER {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for IE, Edge */
+.CENTER {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.LEFT{
+/* border: 1px solid var(--BorderColor); */
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+}
+
+.Shortcuts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+        &:hover{
+        background-color: var(--SecColor);
+        filter: brightness(1.1);
+        transition: filter 0.3s ease;
+    }
+}
+
+.Shortcuts>p{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.UserProfile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--SecColor);
+    padding: 20px;
+    cursor: pointer;
+
+
+    &:hover{
+        filter: brightness(1.1);
+        transition: filter 0.3s ease;
+    }
+}
+
+.UserProfileCircle{
+    border: 1px solid var(--LogoColor);
+
+        &:hover{
+        filter: brightness(1.1);
+        transition: filter 0.3s ease;
+    }
+}
+
+
+label {
+   cursor: pointer;
+   /* Style as you please, it will become the visible UI component. */
+}
+
+#upload-photo,#upload-video {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+
+
+/* end   HomePage ****************** */
+
+
+
+
+/* start ReelsSlider */
+
+.Reels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 10px;
+    gap: 10px;
+    box-sizing: border-box;
+
+    background-color: var(--PriColor);
+}
+
+
+
+.ReelsSlider{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--BorderColor);
+    border-radius: 10px;
+    padding: 10px;
+
+    height: 200px !important;
+    box-sizing: border-box;
+    
+    color: var(--TxtColor);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.ReelsSlider.selected {
+  transform: scale(1);
+  /* z-index: 2; */
+  /* box-shadow: 0 0 5px var(--LogoColor); */
+}
+
+
+.Color1{
+    background-color: var(--LoginBtnColor) !important;
+}
+
+.Color2{
+    background-color: var(--LogoColor) !important;
+}
+
+.Color3{
+    background-color: var(--PriColor) !important;
+}
+
+.Color4{
+    background-color: var(--SecColor) !important;
+}
+
+.UserImgReels{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--LogoColor);
+    background-color: var(--PriColor);
+}
+
+.UserNameReels{
+        position: absolute;
+        text-align: center;
+        bottom: 10px;
+        left: 15px;
+
+        text-transform: capitalize;
+}
+
+/* end   ReelsSlider */
+
+
+
+
+
+/* start slider-container */
+
+.slider-container{
+    text-align: center;
+    position: relative;
+
+    height: 220px !important;
+    width: 100%;
+    max-width: 700px; /* or any value you want */
+    margin: 0 auto;
+    
+    overflow-y: hidden !important;
+}
+
+
+.slick-arrow, .slick-prev{
+    display: none !important;
+}
+
+
+.slick-list{
+    height: 100% !important;
+}
+
+.slick-slide{
+    margin: 10px !important;
+    width: 120px !important;
+
+}
+
+.slick-track{
+    height: 100% !important;
+}
+
+/* .slider-container::before,
+.slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px; 
+    z-index: 1;
+
+}
+
+.slider-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--PriColor), rgba(255, 255, 255, 0));
+}
+
+.slider-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--PriColor), rgba(255, 255, 255, 0));
+} */
+
+
+
+
+
+
+
+.custom-arrows-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow slider interaction except on buttons */
+  z-index: 10;
+}
+
+.custom-arrows-wrapper .custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto; /* Enable clicking */
+  background: var(--SecColor, #fff);
+  border: 1px solid var(--BorderColor, #ccc);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--TxtColor, #333);
+  transition: background 0.2s;
+}
+
+.custom-arrows-wrapper .custom-arrow.prev {
+  left: 10px;
+}
+
+.custom-arrows-wrapper .custom-arrow.next {
+  right: 10px;
+}
+
+.custom-arrows-wrapper .custom-arrow:hover {
+  background: var(--LogoColor, #449eff);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reel-popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reel-popup {
+  background: var(--SecColor);
+  border-radius: 16px;
+  /* padding: 32px 24px; */
+  width: 30%;
+  min-height: 70%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: center;
+}
+.close-popup {
+  margin-top: 20px;
+  padding: 6px 18px;
+  border: none;
+  background: var(--LogoColor, #0866ff);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.UserImgReelsPopup{
+    border-radius: 50%;
+    border: 1px solid var(--LogoColor);
+    background-color: var(--PriColor);
+}
+
+
+.UserHeaderReels{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.ReelsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    position: relative;
+}
+
+.DelReels{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--CloseBTN);
+    font-size: 20px;
+    margin: 20px;
+
+
+    &:hover{
+        filter: brightness(0.9);
+        transform: scale(1.1);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+
+
+
+
+
+.AddNewReels{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--BorderColor);
+    border-radius: 10px;
+    padding: 10px;
+
+    height: 200px !important;
+    width: 80px;
+    box-sizing: border-box;
+    
+    color: var(--TxtColor);
+    background-color: var(--SecColor);
+
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.AddNewReelsIcon{
+    &:hover{
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AddReelsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between !important;
+    padding: 20px;
+}
+
+ .TopPartReels {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 20rem;
+    margin-top: 10px;
+    gap: 10px;
+}
+    
+.TopPartReels > div {
+    flex: 1;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--PriColor) !important;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100% !important;
+    color: var(--TxtColor);
+    background-color: var(--SecColor);
+}
+
+.ShowTextReels{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.TopUserHeaderReels{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.ChangeBgReels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ChangeBgReels>div{
+    display: flex;
+    gap: 10px;
+}
+
+.BtnColor{
+    border: 1px solid var(--BorderColor) !important;
+    color: var(--TxtColor) !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+          transform: scale(1.1);
+          transition: 0.3s ease-in-out;
+    }
+}
+
+
+    .TxtArea{
+        width: 100%;
+        height: 100px;
+        flex-grow: 0;
+        border: 1px solid transparent !important;
+        background-color: var(--PriColor) !important;
+        color: var(--TxtColor) !important;
+        border-radius: 10px;
+        padding: 10px;
+        resize: none;
+
+        &:focus{
+            border-color: var(--BorderColor) !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+          }
+    }
+
+    .TxtArea:focus {
+        outline: none !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .TxtArea::placeholder {
+        color: var(--PlaceholderColor) !important;
+        opacity: 0.8 !important;
+        font-size: 13px;
+    }
+
+    .SaveReelsBtn{
+        margin-top: 10px;
+        }
+
+
+/* end   slider-container */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start Posts */
+
+.Posts{
+    background-color: var(--SecColor);
+    width: 100%;
+    /* height: 150px; */
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--BorderColor);
+}
+
+
+.PostTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.PostInput{
+    background-color: var(--PriColor) !important;
+    color: var(--TxtColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: left !important;
+        outline: none !important;
+        box-shadow: none !important;
+}
+
+.PostInput:focus{
+        outline: none !important;
+        border-color: none !important;
+        box-shadow: none !important;
+  }
+
+
+.PostInput::placeholder{
+        color: var(--PlaceholderColor) !important;
+        opacity: 0.8 !important;
+        font-size: 13px;
+}
+
+
+.PostHeader{
+    width: 100%;
+}
+
+.AvaAndShow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+
+    text-align: start;
+}
+
+.PostPrivacyOptions{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    /* width: 100%; */
+}
+
+
+.PrivacyIcons{
+    margin: 0;
+    /* padding: 3px 5px; */
+    border-radius: 3px;
+    font-size: 12px;
+    color: var(--TxtColor);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 3px;
+
+    cursor: pointer;
+
+
+    &:hover{
+        /* background-color: var(--BorderHoverColor) !important; */
+        filter: brightness(1.5);
+        transition: filter 0.3s ease;
+    }
+}
+
+
+.CloseReelPopup{
+    color: var(--CloseBTN) !important;
+    &:hover{
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+
+.PostContent{
+        width: 100%;
+}
+
+    .PostTextArea{
+        width: 100%;
+        height: 100px;
+        flex-grow: 0;
+        border: 1px solid transparent !important;
+        background-color: var(--SecColor) !important;
+        /* background-color: var(--PriColor) !important; */
+        color: var(--TxtColor) !important;
+        border-radius: 10px;
+        padding: 10px;
+        resize: none;
+
+        &:focus{
+            border-color: var(--BorderColor) !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+          }
+    }
+
+    .PostTextArea:focus {
+        outline: none !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .PostTextArea::placeholder {
+        color: var(--PlaceholderColor) !important;
+        opacity: 0.8 !important;
+        font-size: 13px;
+    }
+
+
+
+
+
+    .AddPostBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.Post-popup {
+  background: var(--SecColor);
+  border-radius: 16px;
+  width: 30%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: center;
+}
+
+.Photo-popup {
+  background: var(--SecColor);
+  border-radius: 16px;
+  width: 25%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: center;
+}
+
+.Video-popup {
+  background: var(--SecColor);
+  border-radius: 16px;
+  width: 25%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
+.PostInputContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+.BtnPost{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.BtnPost>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+    color: var(--TxtColor);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+
+
+        &:hover{
+        background-color: var(--BorderHoverColor) !important;
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+.BtnPost>div>label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+
+.BtnPost>button{
+    background-color: transparent !important;
+    color: var(--TxtColor) !important;
+    border: 1px solid transparent !important;
+    border-radius: 50px !important;
+    font-size: 15px !important;
+    font-weight: bolder !important;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+    &:hover{
+        background-color: var(--BorderHoverColor) !important;
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+.PostSettings{
+    position: relative;
+}
+
+.PostDel{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--TxtColor);
+    font-size: 20px;
+    margin: 10px;
+
+
+    &:hover{
+        filter: brightness(0.9);
+        /* transform: scale(1.1); */
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+.PostDeleteBtn{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.PostDeleteBtn>button{
+    width: 100% !important;
+}
+
+
+
+.DelPopup{
+    background-color: var(--PriColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.DelPopup>.popover-arrow{
+    display: none !important;
+}
+
+
+
+.DelBtn{
+    background-color: var(--PriColor) !important;
+    border: transparent !important;
+    cursor: pointer !important;
+    clip-path: circle();
+    
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+
+
+
+
+
+
+
+/* photoVideo */
+
+
+
+
+
+.photoVideo{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photoVideo > img {
+    border-radius: 10px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+ .photoVideo > video {
+    border-radius: 10px;
+    max-height: 300px;
+}
+
+
+
+    .PhotoTextArea{
+        width: 100%;
+        /* height: 100px; */
+        flex-grow: 0;
+        border: 1px solid transparent !important;
+        background-color: var(--SecColor) !important;
+        /* background-color: var(--PriColor) !important; */
+        color: var(--TxtColor) !important;
+        border-radius: 10px;
+        padding: 10px;
+        resize: none;
+
+        &:focus{
+            border-color: var(--BorderColor) !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+          }
+    }
+
+    .PhotoTextArea:focus {
+        outline: none !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .PhotoTextArea::placeholder {
+        color: var(--PlaceholderColor) !important;
+        opacity: 0.8 !important;
+        font-size: 13px;
+    }
+
+
+
+    .yesDel{
+    border-color: var(--BorderColor) !important;
+    background-color: var(--LoginBtnColor);
+    color: var(--TxtColor);
+    font-weight: bolder;
+    border-radius: 5px;
+
+    &:hover{
+     background-color: var(--PriColor) !important;
+     border: 1px solid var(--BorderColor);
+     filter: brightness(1.1);
+    }
+    }
+
+    .noDel{
+    border-color: var(--BorderColor) !important;
+    background-color: var(--SecColor);
+    color: var(--TxtColor);
+    font-weight: bolder;
+    border-radius: 5px;
+
+
+    &:hover{
+     background-color: var(--SecColor) !important;
+     border: 1px solid var(--BorderColor);
+     filter: brightness(1.1);
+    }
+    }
+
+
+
+
+
+
+
+
+/* end   Posts */
+
+
+
+
+
+
+/* start post body */
+
+.PostsBody{
+    border: 1px solid var(--BorderColor);
+    background-color: var(--SecColor);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+.NotificationBody{
+    border: 1px solid var(--BorderColor);
+    background-color: var(--SecColor);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: default;
+
+    &:hover{
+        filter: brightness(1.1);
+        transition: filter 0.3s ease;
+    }
+}
+
+.PostHead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.PrivacyAndDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.PrivacyAndDate>p{
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.PostContainer{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: var(--PriColor); */
+}
+
+
+
+.PostFooter{
+    width: 100%;
+    margin-top: 10px;
+    /* padding: 0px 50px; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.PostActions{
+    background-color: transparent !important;
+    border: transparent !important;
+    color: var(--TxtColor) !important;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 100%;
+
+      &:hover{
+        background-color: var(--BorderHoverColor) !important;
+    }
+}
+
+
+.FacebookEmojis {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    padding: 5px;
+    width: auto; /* or remove width entirely */
+    justify-content: flex-start; /* or center */
+}
+
+.HoverScale {
+    cursor: pointer;
+    width: 30px !important;
+    height: 30px !important;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.2s cubic-bezier(.4,2,.6,1);
+    /* No margin or padding here */
+}
+
+.HoverScale:hover {
+    transform: scale(1.3);
+    /* No margin or padding change here */
+}
+
+
+.EmojisBtn{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px;
+
+    border: transparent !important;
+    cursor: pointer !important;
+    width: 200px;
+    min-width: 100px;
+    box-sizing: border-box !important;
+    
+    &:hover{
+        background-color: var(--BorderHoverColor) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+
+
+
+
+.EmojiPopup{
+    background-color: var(--SecColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    --bs-popover-max-width:100% !important;
+}
+
+.EmojiPopup>.popover-arrow{
+    display: none !important;
+}
+
+
+
+
+.saveBtn{
+    background-color: transparent !important;
+    border: transparent !important;
+    color: var(--TxtColor) !important;
+    /* padding: 8px; */
+    border-radius: 10px;
+        width: 200px;
+        min-width: 100px;
+
+    &:hover{
+        background-color: var(--BorderHoverColor) !important;
+        filter: brightness(1) !important;
+    }
+}
+
+.saveBtn>i{
+    background: linear-gradient(90deg, #ffa48e 0%,#fc3d84 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+.CommentPopup{
+    background-color: var(--SecColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    width: 100% !important;
+    min-width: 500px;
+    max-height: 500px !important;
+}
+
+
+.CommentPopup>.popover-arrow{
+    display: none !important;
+}
+
+
+.CommentsBtn{
+    border: transparent !important;
+    cursor: pointer !important;
+    width: 200px;
+    min-width: 100px;
+    
+
+    &:hover{
+        background-color: var(--BorderHoverColor) !important;
+        filter: brightness(1) !important;
+       }
+}
+
+
+.commentScroll{
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    max-height:  50vh !important;
+    padding: 5px 10px;
+}
+
+
+/* Track */
+.commentScroll::-webkit-scrollbar-track {
+  background: transparent !important;
+  margin: 10px 0;
+}
+
+/* end post body */
+
+
+
+
+
+
+
+.gold-gradient {
+  background: radial-gradient(circle at 60% 40%, #FFD700 60%, #bb8300 100%, #FFD700 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/* comment section */
+
+.commentHeader{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.commentHeader>button{
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--TxtColor) !important;
+    font-size: 25px !important;
+    clip-path: circle() !important;
+    padding: 0px !important;
+
+
+    &:hover{
+        filter: brightness(1.5);
+    }
+}
+
+.commentInput{
+    background-color: var(--SecColor) !important;
+    border: 1px solid var(--BorderColor) !important;
+    color: var(--TxtColor) !important;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.commentInput::placeholder{
+    color: var(--TxtColor) !important;
+    font-size: 12px !important;
+}
+
+.commentInput:focus{
+        outline: none !important;
+        border-color: none !important;
+        box-shadow: none !important;
+  }
+
+
+ .popover-header{
+    background-color: var(--BorderColor) !important;
+    color: var(--TxtColor) !important;
+    border-bottom: 1px solid var(--BorderColor) !important;
+    font-weight: bolder !important;
+}
+
+.CommentSection{
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--BorderColor);
+
+    position: relative;
+    cursor: default;
+
+    &:hover{
+        transform: scale(1.015);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+
+
+.DelCommentBtn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--CloseBTN) !important;
+    cursor: pointer;
+
+
+    &:hover{
+        filter: brightness(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* saved Post */
+
+.SavedPostContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+
+    margin-top: -50px;
+    padding-top: 50px;
+    
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.SavedPost{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    width: 650px;
+    overflow-y: scroll;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.SavedPostContainer::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent !important;
+}
+
+/* Hide scrollbar for Firefox */
+.SavedPost {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for IE, Edge */
+.SavedPost {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+.emptySaved {
+    margin-top: 20%;
+    text-align: center;
+    cursor: default;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* profileSection */
+
+.ProfileContainer{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+
+    gap: 10px;
+    /* padding: 10px; */
+
+
+    margin-top: -50px !important;
+    padding-top: 50px !important;
+    overflow: hidden !important;
+    
+    height: 100vh !important;
+}
+
+.ProfileContainer::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+}
+
+.ProfileContainer {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.ProfileCenter{
+    overflow-y: scroll;
+    min-width: 40%;
+    max-width: 40%;
+}
+
+.ProfileCenter::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+}
+
+.ProfileCenter {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.ProfileRight{
+    padding: 10px;
+}
+
+.profileSection{
+    height: 100vh;
+    padding: 20px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    padding-top: 50px;
+    margin-top: -50px;
+
+    position: relative;
+}
+
+.profileSection::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+}
+
+.profileSection {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+.profileHeader{
+    width: 450px;
+    border-radius: 10px;
+
+    background-color: var(--SecColor);
+    border: 1px solid var(--BorderColor);
+}
+
+.profileCover{
+    margin: auto;
+    height: 200px;
+    background-color: var(--PriColor);
+    border: 1px solid var(--BorderColor);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    position: relative;
+}
+
+
+.profilePicture{
+    width: 150px;
+    height: 150px;
+
+    background-color: var(--PriColor);
+    border: 1px solid var(--BorderColor);
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 250px;
+}
+
+
+.profileData{
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.profileData>p{
+    margin: 0;
+}
+
+.profileBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.profileBtn>button{
+    background-color: var(--BorderHoverColor) !important;
+    padding: 3px 1rem;
+    font-size: 12px;
+    border: 1px solid var(--BorderColor) !important;
+
+
+    &:hover{
+        background-color: var(--SecColor) !important;
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+}
+}
+
+
+
+.profileBio{
+
+    field-sizing: content;
+    width: 100%;
+    resize: none;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    padding: 10px;
+
+    color: var(--TxtColor) !important;
+    text-align: center !important;
+
+
+    &:focus{
+    border: 1px solid transparent !important;
+    outline: transparent !important;
+    }
+}
+
+
+
+
+
+
+.profileInfo{
+    padding: 10px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.profileInfoItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.profileInfoItem>input{
+    /* background-color: transparent !important; */
+    /* background-color: var(--PriColor) !important; */
+    border: transparent !important;
+    margin-left: 10px;
+    color: var(--TxtColor) !important;
+    font-weight: bolder !important;
+    font-size: 12px !important;
+    width: 90%;
+    border-radius: 10px;
+
+    &:focus{
+        outline: transparent !important;
+    }
+
+    &::placeholder{
+        font-size: 12px !important;
+        color: var(--TxtColor) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FriendsPage */
+
+.FriendsPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 100vh;
+    margin-top: -50px;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.LeftFriends{
+    background-color: var(--SecColor);
+    width: 25%;
+    height: 100vh;
+    border: 1px solid var(--BorderColor);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.searchBox{
+    background-color: var(--PriColor);
+    width: 100%;
+    /* height: 100px; */
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: 1px solid var(--LogoColor);
+    outline: none !important;
+    color: var(--TxtColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.RightFriends{
+    background-color: var(--PriColor);
+    padding: 10px;
+    width: 75%;
+    overflow-y: scroll;
+
+    text-align: center;
+}
+
+.RightFriends>h5{
+    background-color: var(--SecColor);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--BorderColor);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.RightFriends::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent !important;
+}
+
+/* Hide scrollbar for Firefox */
+.RightFriends {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for IE, Edge */
+.RightFriends {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+.FriendsCardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+    justify-content: center;
+}
+
+
+.FriendsCard{
+    background-color: var(--SecColor);
+    border: 1px solid var(--BorderColor);
+    border-radius: 10px;
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchResult{
+    width: 100%;
+}
+
+
+.FriendsCardSearch{
+    background-color: var(--PriColor);
+    border: 1px solid var(--BorderColor);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ProfileImgSearch2{
+    border-radius: 50%;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--SecColor);
+    width: 50px;
+    height: 50px;
+}
+
+
+.SearchInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    /* padding: 10px; */
+}
+
+
+  .BtnFollowSearch{
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--TxtColor);
+    font-weight: bolder;
+    border-radius: 5px !important;
+
+    &:hover{
+     filter: brightness(1.1);
+    }
+  }
+
+  .BtnFollowSearch:disabled{
+    background-color: var(--BorderColor) !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FriendsCardImage{
+    width: 200px;
+    height: 80px;
+    background-color: var(--PlaceholderColor);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.FriendsCardImageProfile{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    background-color: var(--PriColor);
+    border: 1px solid var(--BorderColor);
+}
+
+.FriendsCardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.FriendsCardInfo>p {
+  font-size: 10px;
+}
+
+.FriendsCardImage>img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.FriendsCardInfo{
+    padding: 5px;
+}
+
+
+.FriendsCardButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    /* padding: 10px; */
+}
+
+
+  .BtnFollow{
+    border-color: var(--BorderColor) !important;
+    background-color: var(--LogoColor);
+    border: 1px solid var(--SecColor);
+    color: var(--TxtColor);
+    font-weight: bolder;
+    border-radius: 5px !important;
+    width: 100%;
+
+    &:hover{
+     background-color: var(--BorderColor) !important;
+     border: 1px solid var(--SecColor);
+     filter: brightness(1.1);
+    }
+  }
+
+  .BtnFollow:disabled{
+    background-color: var(--BorderColor) !important;
+  }
+
+
+
+  
+  .BtnRemove{
+    border-color: var(--BorderColor) !important;
+    background-color: var(--BorderColor);
+    border: 1px solid var(--SecColor);
+    color: var(--TxtColor);
+    /* font-weight: bolder; */
+    border-radius: 5px !important;
+    width: 100%;
+
+    &:hover{
+     background-color: var(--SecColor) !important;
+     border: 1px solid var(--BorderColor);
+     filter: brightness(1.1);
+    }
+  }
+
+  .BtnRemove:disabled{
+    background-color: var(--BorderColor) !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FollowingListUsers::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.FollowingListUsers {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+  .FollowingListUsers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px;
+
+    max-height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--BorderHoverColor) !important;
+
+
+
+    &:hover{
+        background-color: var(--BorderHoverColor) !important;
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+        border: 1px solid var(--BorderColor);
+    }
+  }
+
+  .FollowingIMG{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--PriColor);
+  }
+
+
+  .FollowingUserInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+  .DelNotificationBTN{
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--TxtColor) !important;
+    clip-path: circle() !important;
+    padding: 0px !important;
+
+
+    &:hover{
+        color: var(--CloseBTN) !important;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+  }
