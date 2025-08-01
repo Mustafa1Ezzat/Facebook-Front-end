@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📘 Facebook 
 
 **Facebook** is a lightweight, modular social networking platform inspired by Facebook.  
